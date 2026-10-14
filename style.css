@@ -215,3 +215,43 @@ footer { background: #022e20; color: rgba(255,255,255,.78); padding: 42px 0 20px
   .footer-contact { text-align: left; }
   .image-badge { left: 17px; bottom: 17px; }
 }
+
+
+/* Weekend ordering banner — added without changing the existing home sections */
+.weekend-banner {
+  width: min(1160px, calc(100% - 40px));
+  margin: 18px auto 0;
+  padding: 18px 22px;
+  display: flex; align-items: center; gap: 16px;
+  color: #fff; background: linear-gradient(110deg, #075b3d, #0b7650);
+  border-radius: 18px; box-shadow: 0 12px 28px rgba(7,91,61,.16);
+  transition: transform .2s, box-shadow .2s;
+}
+.weekend-banner:hover { transform: translateY(-2px); box-shadow: 0 16px 32px rgba(7,91,61,.22); }
+.weekend-banner-icon { width: 52px; height: 52px; flex: 0 0 52px; display: grid; place-items: center; background: rgba(255,255,255,.14); border-radius: 15px; font-size: 27px; }
+.weekend-banner-copy { flex: 1; min-width: 0; }
+.weekend-banner-copy strong, .weekend-banner-copy small { display: block; }
+.weekend-banner-copy strong { font: 700 20px/1.25 "Playfair Display", Georgia, serif; }
+.weekend-banner-copy small { margin-top: 4px; color: rgba(255,255,255,.82); font-size: 13px; }
+.weekend-banner-action { flex: 0 0 auto; background: #f4c83f; color: #18352a; padding: 11px 16px; border-radius: 999px; font-weight: 800; font-size: 13px; }
+@media (max-width: 600px) {
+ .weekend-banner { width: calc(100% - 26px); padding: 14px; gap: 11px; border-radius: 15px; }
+ .weekend-banner-icon { width: 42px; height: 42px; flex-basis: 42px; font-size: 22px; }
+ .weekend-banner-copy strong { font-size: 16px; }
+ .weekend-banner-copy small { font-size: 11px; line-height: 1.35; }
+ .weekend-banner-action { padding: 9px 10px; font-size: 11px; }
+}
+
+/* Weekend ordering feature */
+.brand-logo{display:block;width:min(220px,48vw);height:auto;max-height:64px;object-fit:contain;object-position:left center}
+.weekend-order-promo{display:block;background:linear-gradient(110deg,#075b3d 0%,#0b7049 65%,#138153 100%);color:#fff;text-decoration:none;padding:22px 0;position:relative;overflow:hidden}
+.weekend-order-promo:after{content:"";position:absolute;width:230px;height:230px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:10%;top:-155px;pointer-events:none}
+.weekend-order-inner{display:flex;align-items:center;gap:20px;position:relative;z-index:1}
+.weekend-order-icon{width:62px;height:62px;flex:0 0 62px;display:grid;place-items:center;border-radius:18px;background:rgba(255,255,255,.13);font-size:32px}
+.weekend-order-copy{flex:1;min-width:0}
+.weekend-order-kicker{font-size:11px;letter-spacing:1.8px;font-weight:800;color:#f4d66b}
+.weekend-order-copy h2{font:700 clamp(21px,2.8vw,30px)/1.15 "Playfair Display",Georgia,serif;margin:4px 0 5px;color:#fff}
+.weekend-order-copy p{font-size:14px;margin:0;color:rgba(255,255,255,.85)}
+.weekend-order-cta{display:inline-flex;align-items:center;gap:12px;white-space:nowrap;background:#f4c83f;color:#173b2b;padding:13px 18px;border-radius:12px;font-weight:800;transition:transform .2s,background .2s}
+.weekend-order-promo:hover .weekend-order-cta{transform:translateX(3px);background:#ffda58}
+@media(max-width:600px){.brand-logo{max-height:54px;width:min(190px,52vw)}.weekend-order-promo{padding:18px 0}.weekend-order-inner{gap:12px;flex-wrap:wrap}.weekend-order-icon{width:48px;height:48px;flex-basis:48px;font-size:25px;border-radius:14px}.weekend-order-copy{flex:1 1 calc(100% - 65px)}.weekend-order-copy p{font-size:13px}.weekend-order-cta{margin-left:60px;padding:10px 15px}}

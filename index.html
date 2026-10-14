@@ -8,6 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,18 +24,26 @@
 
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="#">
-        <span class="brand-mark">A</span>
-        <span>
-          <strong>Athidi</strong>
-          <small>FOODS</small>
-        </span>
+      <a class="brand" href="#" aria-label="Athidi Foods home">
+        <img class="brand-logo" src="assets/Athidi Foods Logo with Steaming Bowl.png" alt="Athidi Foods">
       </a>
       <a class="nav-cta" href="#contact">Subscribe / Enquire</a>
     </div>
   </header>
 
   <main>
+    <a class="weekend-order-promo" href="/order.html" aria-label="Order food for the weekend">
+      <div class="container weekend-order-inner">
+        <div class="weekend-order-icon" aria-hidden="true">🍛</div>
+        <div class="weekend-order-copy">
+          <span class="weekend-order-kicker">WEEKEND SPECIALS</span>
+          <h2>Craving something delicious this weekend?</h2>
+          <p>Explore our menu, choose your favourites, and order fresh food for the weekend.</p>
+        </div>
+        <span class="weekend-order-cta">Order food <span aria-hidden="true">→</span></span>
+      </div>
+    </a>
+
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
@@ -110,33 +123,6 @@
             <h3>Home-style Taste</h3>
             <p>Comfort-food inspired meals that feel familiar and satisfying.</p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="plans">
-      <div class="container plans-grid">
-        <div>
-          <div class="section-heading left">
-            <span>CUSTOMISE YOUR LUNCH</span>
-            <h2>Choose your meal<br>the day before.</h2>
-          </div>
-          <p class="plans-intro">The menu currently follows the options shown in our launch brochure.</p>
-        </div>
-
-        <div class="menu-card">
-          <div class="menu-row">
-            <div class="menu-label">Box 1 <span>Rice</span></div>
-            <div class="menu-items"><span>Colour Rice</span><span>Jeera Rice</span><span>Pulav</span><span>Tomato Rice</span></div>
-          </div>
-          <div class="menu-row">
-            <div class="menu-label">Box 2 <span>Main</span></div>
-            <div class="menu-items"><span>Sambar Rice</span><span>Dal Rice</span><span>Curd Rice</span><span>2 Chapati + Curry</span></div>
-          </div>
-          <div class="menu-row">
-            <div class="menu-label">Box 3 <span>Side</span></div>
-            <div class="menu-items"><span>Aalu Fry</span><span>Mixture</span><span>Aalu Chips</span><span>Sweet</span><span>Egg</span></div>
-          </div>
         </div>
       </div>
     </section>
