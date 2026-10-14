@@ -124,7 +124,7 @@
       'Delivery fee: ₹30',
       `Total payable: ${money(itemTotal() + 30)}`,
 	  'Please make payment on the link below to confirm your order',
-	  `upi://pay?pa=9741119072%40idfcfirst&am=${money(itemTotal() + 30)}&cu=INR`
+	  `upi://pay?pa=9741119072%40idfcfirst&am=${(itemTotal() + 30)}&cu=INR`
     ];
     const whatsappUrl = `https://wa.me/919741119072?text=${encodeURIComponent(lines.join('\n'))}`;
     window.location.href = whatsappUrl;
