@@ -22,6 +22,8 @@ npm start
 
 Deploy to a host supporting the Next.js Node.js runtime, such as Vercel, or run `npm start` on your server. PhonePe checkout uses server routes and cannot run on GitHub Pages or the old static `out/` export. Configure the environment variables on your hosting provider.
 
+For Vercel, use the repository root (the directory containing `package.json`) as Root Directory. The checked-in `vercel.json` selects the Next.js framework, `npm run build`, and `.next` output. Do not select `public`, `assets`, or `out` as the project root/output. Push the latest application and configuration to the connected branch, then deploy that commit. Check the deployment's own Visit URL before troubleshooting a custom domain. A Vercel `404 NOT_FOUND` can also indicate a wrong URL/domain mapping, so a successful local build alone does not prove the live deployment is configured correctly.
+
 Routes: `/` is the five-category home page; `/lunch-subscription` preserves the original lunch landing page; `/biryani-curries` uses the existing ordering flow. `/sweets`, `/bakery`, and `/dry-fruits` are coming-soon pages. `/order`, `/payment/[id]`, and compatibility aliases `/index.html` and `/order.html` remain supported.
 
 ## Features
