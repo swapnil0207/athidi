@@ -21,6 +21,7 @@ export default function StoreFooter() {
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} Athidi Foods</span>
         <a href="/sitemap.html">Explore all pages</a>
+        <a href="/app-settings">Install & notifications</a>
         <a href="/dashboard/login">Shop login</a>
         <a href="/dashboard/customer/login">Customer login</a>
         <a href="/dashboard/admin/login">Admin login</a>

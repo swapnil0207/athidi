@@ -28,6 +28,8 @@ Routes: `/` is the five-category home page; `/lunch-subscription` preserves the 
 
 ## Features
 
+- Mobile installation and notification settings at `/app-settings`, with an orange bowl app icon and an offline reconnect screen. Test notifications work after permission; automated Web Push still requires real account/subscription storage and a server sender. See [PWA setup](docs/pwa.md).
+
 - All 13 dishes, original images and prices, price sorting, and rice/main-course categories.
 - Quantity controls, selected-card styling, cart count, subtotal and ₹30 delivery fee.
 - Name, address and six-digit PIN validation; delivery to 518301 and 518302 only.
